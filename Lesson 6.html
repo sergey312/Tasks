@@ -18,12 +18,35 @@
 
     return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] */
 
-     function counting(n) {
+     function counting (n) {
          var arr = [];
          for(i = 0; i < n; i++) {
-             arr[i] = i+1;
+             arr[i] = i + 1;
          }
          return arr;
+     }
+
+     /* Nathan loves cycling.
+
+    Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+    You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the
+
+     smallest value.
+
+    For example:
+
+    time = 3 ----> litres = 1
+
+    time = 6.7---> litres = 3
+
+    time = 11.8--> litres = 5
+    */
+
+     function amountOfWaterDrunk (time) {
+         var liters = time * 0.5;
+         liters = Math.floor(liters);
+         return liters;
      }
 </script>
 </body>
