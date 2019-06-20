@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6834520-3d45-410e-9000-2dbfc949d64a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 7.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lesson 7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -110,18 +111,18 @@
       <option name="presentableId" value="Default" />
       <updated>1560505861376</updated>
       <workItem from="1560505862713" duration="17582000" />
-      <workItem from="1561049082701" duration="1278000" />
+      <workItem from="1561049082701" duration="1911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18860000" />
+    <option name="totallyTimeSpent" value="19493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -134,7 +135,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3970588" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3970588" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -154,8 +155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson 7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
