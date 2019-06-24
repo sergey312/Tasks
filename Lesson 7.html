@@ -14,17 +14,30 @@
 
 
     function centuryFromYear (year) {
-        var i=0;
-        for( ;year > 0;i++){
+        for( i=0;year > 0;i++){
             year= year - 100;
         }
         return i;
     }
 
     //Simple, remove the spaces from the string, then return the resultant string.
-    var str =[];
+
     function getStringWithoutSpaces(str) {
-        str.reverse()
+        var arr = str.split(' ');
+        str = arr.join('');
+        return str;
+    }
+
+    // It's pretty straightforward. Your goal is to create a function that removes the first
+    // and last characters of a string. You're given one parameter, the original string.
+    // You don't have to worry with strings with less than two characters.
+
+    function strWithout1and2lett(str) {
+        var arr = str.split('');
+        arr.splice(0,1);
+        arr.splice(-1,1);
+        str = arr.join('');
+        return str;
     }
 </script>
 </body>
