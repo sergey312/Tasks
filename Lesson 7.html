@@ -39,6 +39,111 @@
         str = arr.join('');
         return str;
     }
+    
+    //A digital root is the recursive sum of all the digits in a number.
+    // Given n, take the sum of the digits of n. If that value has more 
+    // than one digit, continue reducing in this way until a single-digit
+    // number is produced. This is only applicable to the natural numbers.
+    
+    function digitalRoot(n) {
+        while (n > 9) {
+           n = n.toString();
+           var arr = n.split('');
+           n = 0;
+           for(var i = 0; i < arr.length; i++) {
+               n = n + +arr[i];
+           }
+        }
+          return n;
+    }
+
+    //Write a method palindrome_chain_length which takes a positive number and returns
+    //    the number of special steps needed to obtain a palindrome. The special step
+    //    is: "reverse the digits, and add to the original number". If the resulting
+    //    number is not a palindrome, repeat the procedure with the sum until the
+    //    resulting number is a palindrome.
+    // If the input number is already a palindrome, the number of steps is 0.
+    //
+    // Input will always be a positive integer.
+    //
+    //     For example, start with 87:
+    //
+    // 87   78 = 165; 165   561 = 726; 726   627 = 1353; 1353   3531 = 4884
+    //
+    // 4884 is a palindrome and we needed 4 steps to obtain it, so palindrome_chain_length(87) == 4
+    
+    function palindrome_chain_length(pal) {
+        for (var i= 0;+pal != +pal.toString().split('').reverse().join(''); i++){
+          pal = +pal + +pal.toString().split('').reverse().join('');
+        }
+    return i;
+    }
+
+    //    The magic sum of 3s is calculated on an array by summing
+    //    up odd numbers which include the digit 3. Write a function 
+    //    magic_sum which accepts an array of integers and returns the sum.
+    // Example: [3, 12, 5, 8, 30, 13] results in 16 (3   13)
+    //
+    // If the sum cannot be calculated, 0 should be returned.
+    
+    function magic_sum_of_3s(arr=[]) {
+        var resultSum =  arr.reduce(function (sum, curr) {
+            if ((curr.toString().indexOf('3') != -1) && (curr % 2 != 0)){
+                return sum + curr;
+            }else {
+                return sum;
+            }
+        },0);
+        return resultSum;
+    }
+
+    //Pete likes to bake some cakes. He has some recipes and ingredients.
+    //    Unfortunately he is not good in maths. Can you help him to find
+    //    out, how many cakes he could bake considering his recipes?
+
+    // Write a function cakes(), which takes the recipe (object) and the available
+    // ingredients (also an object) and returns the maximum number of cakes Pete
+    // can bake (integer). For simplicity there are no units for the amounts
+    // (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients
+    // that are not present in the objects, can be considered as 0.
+
+    function cakes(recipe, available) {
+        var tempArr = [];
+        for (var key in recipe) {
+            if ((available[key]/recipe[key])>= 1) {
+                tempArr.push(Math.floor(available[key] / recipe[key]));
+            } else {
+                tempArr.push(0);
+            }
+        }
+        var result = tempArr.reduce(function(min, curr){
+            if (+min > +curr){
+               return +curr;
+            } else {
+              return +min;
+            }
+        });
+        return result;
+    }
+
+    //Complete the method/function so that it converts dash/underscore delimited
+    // words into camel casing. The first word within the output should be 
+    // capitalized only if the original word was capitalized (known as Upper Camel
+    // Case, also often referred to as Pascal case).  
+    
+    function toCamelCase(str) {
+        var arr= [];
+        arr = str.split('');
+
+        arr.forEach(function (item, i, arr) {
+        if(item == "_" || item == "-"){
+            arr[i+1] = arr[i+1].toUpperCase();
+            delete arr[i];
+        }
+        });
+        str = arr.join('');
+        return str;
+    }
 </script>
 </body>
 </html>
