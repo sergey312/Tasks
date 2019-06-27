@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function multipleSum() {
+            var sum = x;
+
+            function f(y) {
+                sum += y;
+                return f;
+            };
+            return f;
+    }
+
+
+    function checkout1(arr){
+    arr.every(function(e, i, a) {
+        if (i) {
+            return e > a[i-1];
+        } else{
+            return true;
+        }
+    });
+    }
+
+    function sort1(products) {
+        var sortable = [];
+        products.forEach(function(key, i, products) {
+            if (products[i] == "READY" && products[i] == "BANK" ){
+                sortable.push(products[key]);
+        }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "READY" && products[i] == "CLIENT" ){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "IN PROGRESS" || products[i] == "IN PROGRESS2" ){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "SCORING"){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "REJECTED" ){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[status] == "NEW"){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "ACTIVATED"){
+                sortable.push(products[key]);
+            }});
+
+        products.forEach(function(item, i, products) {
+            if (products[i] == "ACTIVE"){
+                sortable.push(products[key]);
+            }});
+
+        console.log(sortable) ;
+
+    }
+</script>
+
+</body>
+</html>
